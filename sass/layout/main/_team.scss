@@ -68,11 +68,11 @@
     transition: background-color 250ms var(--cubic-main),
         fill 250ms var(--cubic-main),
         border-radius 250ms var(--cubic-main);
+
+    &:hover,
+    &:focus {
+        background-color: var(--main-color);
+        fill: var(--main-white);
+    }
 }
 
-.worker__link:hover,
-.worker__link:focus {
-    background-color: var(--main-color);
-    fill: var(--main-white);
-
-}

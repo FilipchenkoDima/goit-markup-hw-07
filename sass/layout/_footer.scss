@@ -67,12 +67,14 @@ footer {
     fill: var(--main-white);
 
     transition: background-color 250ms var(--cubic-main);
+    
+    &:hover,
+    &:focus {
+        background-color: var(--main-color);
+    }
 }
 
-.footer__icon:hover,
-.footer__icon:focus {
-    background-color: var(--main-color);
-}
+
 
 .footer__input {
     padding-top: 15px;
@@ -85,14 +87,16 @@ footer {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     color: var(--background-main);
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+    
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
-.footer__input::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
 
-    color: rgba(255, 255, 255, 0.6);
-}
 
 .footer__subscribe {
     display: flex;
